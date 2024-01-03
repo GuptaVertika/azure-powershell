@@ -103,7 +103,7 @@ jobs:
         $Title = "Migrate ${{ parameters.ServiceName }} from $SourceBranch to ${{ parameters.TargetBranch }}";
         $HeadBranch = "codegen/${{ parameters.ServiceName }}";
         $BaseBranch = "${{ parameters.TargetBranch }}";
-        $Description = "Migrate ${{ parameters.ServiceName }} from $SourceBranch to ${{ parameters.TargetBranch }};
+        $Description = "Migrate ${{ parameters.ServiceName }} from $SourceBranch to ${{ parameters.TargetBranch }}
         The last commit of src/${{ parameters.ServiceName }} in $SourceBranch is:
         $(git log -1  origin/$SourceBranch -- ./src/${{ parameters.ServiceName }})
         ";
